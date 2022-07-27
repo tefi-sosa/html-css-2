@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: lightgray;
+    height: 100px;
+}
+
+#menu {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    background-color: rgb(82, 82, 209);
+}
+
+.color-div {
+    height: 200px;
+}
+
+#text {
+    line-height: 2rem;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 10px;
+}
+
+#blue {
+    background-color: rgb(82, 82, 209);
+}
+
+#aqua {
+    background-color: rgb(133, 194, 213);
+}
+
+#green {
+    background-color: aquamarine;
+}
+
+#lime {
+    background-color: rgb(202, 255, 127);
+}

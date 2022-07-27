@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    background-color: grey;
+    width: 100vw;
+    height: 15vh;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    align-items: flex-end;
+}
+
+.grey {
+    background-color:lightgray;
+    width: 20vw;
+    height: 80vh;
+}
+
+.black {
+    background-color: black;
+    width: 60vw;
+    height: 15vh;
+}
+
+
+

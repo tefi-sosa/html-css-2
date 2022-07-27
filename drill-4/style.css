@@ -1,0 +1,123 @@
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 15vh;
+    color: azure;
+}
+
+#logo {
+    font-size: 2rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: azure;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: azure;
+  }
+
+/* NAVBAR */
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 70vw;
+}
+
+#navbar a{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+#navbar a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #C6EBBE;
+    position: absolute;
+    left: 0;
+    bottom: 10;
+    transition: 0.5s;
+}
+#navbar a:hover::after{
+    width: 100%;
+}
+
+/* SECTIONS */
+
+.container {
+    height: 100vh;
+    background-color: rgba(47, 47, 149, 0.873);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+/* #top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+} */
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+    width: 40vw;
+    margin: 55px 30px;
+    margin: 50px;
+}
+
+#top{
+    background-image: url(C:\Users\estef\Desktop\DevMountain\Foundations\Week_3\html-css-2\drill-4\images\nasa.jpeg);
+}
+
+#middle-1, #bottom {
+    background-color: rgb(129, 129, 225);
+}
+
+.btn {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150vh;
+}
