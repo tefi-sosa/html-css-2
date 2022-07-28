@@ -41,7 +41,7 @@ a:link {
 
 #navbar a::after{
     content: '';
-    height: 3px;
+    height: 1px;
     width: 0;
     background: #C6EBBE;
     position: absolute;
@@ -49,11 +49,16 @@ a:link {
     bottom: 10;
     transition: 0.5s;
 }
+
 #navbar a:hover::after{
     width: 100%;
 }
 
 /* SECTIONS */
+
+h1 {
+    font-size: 3rem;
+}
 
 .container {
     height: 100vh;
@@ -64,12 +69,6 @@ a:link {
     justify-content: flex-end;
 }
 
-/* #top {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-} */
 
 #content {
     display: flex;
@@ -77,12 +76,8 @@ a:link {
     justify-content: space-around;
     height: 30vh;
     width: 40vw;
-    margin: 55px 30px;
-    margin: 50px;
-}
-
-#top{
-    background-image: url(C:\Users\estef\Desktop\DevMountain\Foundations\Week_3\html-css-2\drill-4\images\nasa.jpeg);
+    margin: 20vh 10vw;
+    color: aliceblue;
 }
 
 #middle-1, #bottom {
@@ -99,7 +94,33 @@ a:link {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    z-index: 1;
+}
 
+.btn:hover {
+    color: black;
+}
+
+.container a{
+    list-style: none;
+    display: flex;
+    justify-items: flex-end;
+    position: relative;
+}
+
+.container a::after{
+    content: '';
+    height: 0;
+    width: 100%;
+    background: azure;
+    position: absolute;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.container a:hover::after{
+    height: 100%;
 }
 
 /* FOOTER */
@@ -120,4 +141,8 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     width: 150vh;
+}
+
+.footer-link:hover {
+    color: gray;
 }
