@@ -18,10 +18,10 @@ a:link {
     color: azure;
   }
   
-  a:visited {
-    text-decoration: none;
-    color: azure;
-  }
+a:visited {
+text-decoration: none;
+color: azure;
+}
 
 /* NAVBAR */
 
@@ -36,7 +36,6 @@ a:link {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
-    position: relative;
 }
 
 #navbar a::after{
@@ -44,9 +43,8 @@ a:link {
     height: 1px;
     width: 0;
     background: #C6EBBE;
-    position: absolute;
+    display: flex;
     left: 0;
-    bottom: 10;
     transition: 0.5s;
 }
 
@@ -94,7 +92,6 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: absolute;
     z-index: 1;
 }
 
@@ -104,8 +101,6 @@ h1 {
 
 .container a{
     list-style: none;
-    display: flex;
-    justify-items: flex-end;
     position: relative;
 }
 
